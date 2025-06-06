@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+WORKDIR /home/ubuntu
+COPY non.tar.gz .
+WORKDIR /home/ubuntu
+RUN tar -xvf non.tar.gz
+CMD ["/bin/bash"]
+docker build -t m2:v3 .
+docker run -it --name counturename m2:v3 /bin/bash
+  its going to container  and 
+ls
