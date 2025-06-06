@@ -1,0 +1,9 @@
+FROM ubuntu:20.04
+WORKDIR /home/ubuntu
+ADD om.tar.gz .
+WORKDIR /home/ubuntu
+CMD ["/bin/bash"]
+docker build -t m1:v1 .
+docker run -it --name containername m1:v1 
+its enter in conter 
+ls  
